@@ -1,27 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
+  
+}
+
+.hver{
+  transition: .3s;
+  background-color: white;
+  border-radius: 15px;
+  border:1px solid black
+}
+.hver:hover{
+  background-color: black;
+  color:white;
+  border-radius: 25px;
+  border:1px solid white
+}
+.wo{
+  width:31%
+}
+@media screen and (max-width:1025px){
+  .wo{
+    width:48%
+  }
+  
+}
+@media screen and (max-width:426px){
+  .wo{
+    width:100%
+  }
+  
 }
